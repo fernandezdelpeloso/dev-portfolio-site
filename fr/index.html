@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Fernandez del Peloso - Portefeuille Dev</title>
+  <link rel="canonical" href="https://fernandezdelpeloso.com/fr/">
+  <link rel="alternate" href="https://fernandezdelpeloso.com/en/" hreflang="en">
+  <link rel="alternate" href="https://fernandezdelpeloso.com/fr/" hreflang="fr">
+  <link rel="alternate" href="https://fernandezdelpeloso.com/en/" hreflang="x-default">
+  <meta name="description" content="Projets en systèmes embarqués, systèmes IA multi-agents et DevOps par Eduardo Fernandez del Peloso.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <span class="text-xl font-bold">Eduardo Fernandez del Peloso</span>
+      <div class="space-x-6">
+        <a href="#projects" class="hover:text-blue-600">Projets</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <span class="text-gray-400">|</span>
+        <a href="/en/" hreflang="en" lang="en" class="hover:text-blue-600">EN</a>
+        <a href="/fr/" hreflang="fr" lang="fr" class="hover:text-blue-600 font-semibold">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-50 py-20 text-center">
+    <h1 class="text-4xl font-bold mb-4">Bienvenue sur mon portefeuille de développement</h1>
+    <p class="text-lg mb-6">Découvrez mes projets en systèmes embarqués, IA et DevOps.</p>
+    <a href="https://github.com/fernandezdelpeloso" target="_blank" rel="noopener"
+       class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Voir mon GitHub</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-16 px-6">
+    <h2 class="text-2xl font-bold mb-6">Dépôts mis en avant</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>
+        <a href="https://github.com/fernandezdelpeloso/stm32-nixie-clock" target="_blank" rel="noopener"
+           class="text-blue-600 hover:underline">Horloge Nixie STM32</a> — STM32F4 bare-metal + synchro GPS, RTC I²C, OLED pour réglages, capteur IR de présence, PCB sur mesure.
+      </li>
+      <li>
+        <a href="https://github.com/fernandezdelpeloso/ai_multi_agent" target="_blank" rel="noopener"
+           class="text-blue-600 hover:underline">Système IA multi-agents</a> — Cadre débat/vote avec orchestrateur et traçabilité du raisonnement.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-6">Contact</h2>
+      <p class="mb-2">GitHub : <a class="text-blue-600 hover:underline" href="https://github.com/fernandezdelpeloso" target="_blank" rel="noopener">github.com/fernandezdelpeloso</a></p>
+      <p class="text-sm text-gray-600">© <span id="y"></span> Eduardo Fernandez del Peloso</p>
+    </div>
+  </section>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
